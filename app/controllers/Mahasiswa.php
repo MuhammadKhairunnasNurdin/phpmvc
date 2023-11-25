@@ -1,5 +1,9 @@
 <?php
 
+namespace controllers;
+
+use core\Controller;
+
 class Mahasiswa extends Controller {
 	public function index() {
 		$data['judul'] = 'Daftar Mahasiswa';

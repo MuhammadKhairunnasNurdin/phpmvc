@@ -6,9 +6,13 @@ use core\Controller;
 
 class About extends Controller
 {
-	public function index($name = "anas", $job = "heh")
-	{
-		$this->view("about/index", [$name, $job]);
+	public function index($nama = 'Supri', $pekerjaan = 'Supir') {
+		$data['judul'] = 'About';
+		$data['nama'] = $nama;
+		$data['pekerjaan'] = $pekerjaan;
+		$this->view('templates/header', $data);
+		$this->view('about/index', $data);
+		$this->view('templates/footer');
 	}
 
 	public function page()
