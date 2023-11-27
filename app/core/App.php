@@ -21,7 +21,6 @@ class App
             in $url in indexes 0*/
 			if (file_exists("../app/controllers/" . $url[0] . ".php")) {
 				$this->controller = $url[0];
-				var_dump(1);
 
 				/*this to delete our string controller in order to retrieve index or params*/
 				unset($url[0]);
